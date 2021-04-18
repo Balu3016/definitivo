@@ -4,14 +4,14 @@ import 'package:flutter/material.dart';
 import 'package:prueva_0/dio.dart';
 import 'package:prueva_0/models/user.dart';
 
-class PostsScreen extends StatefulWidget {
+class PostsScreen1 extends StatefulWidget {
   @override
   State<StatefulWidget> createState() {
     return PostsState();
   }
 }
 
-class PostsState extends State<PostsScreen> {
+class PostsState extends State<PostsScreen1> {
   Future<List<User>> getPosts() async {
     Dio.Response response = await dio().get(
       'user/users',
@@ -31,7 +31,7 @@ class PostsState extends State<PostsScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Post'),
+        title: Text('Perfil de usuario'),
       ),
       body: Center(
         child: FutureBuilder<List<User>>(

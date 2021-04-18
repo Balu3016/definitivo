@@ -5,14 +5,14 @@ import 'package:prueva_0/models/doctores.dart';
 
 import '../dio.dart';
 
-class EmergenciasScreen extends StatefulWidget {
+class EmergenciasScreen1 extends StatefulWidget {
   @override
   State<StatefulWidget> createState() {
     return EmergenciasState();
   }
 }
 
-class EmergenciasState extends State<EmergenciasScreen> {
+class EmergenciasState extends State<EmergenciasScreen1> {
   Future<List<Doctores>> getPosts() async {
     Dio.Response response = await dio().get(
       'user/doctores',

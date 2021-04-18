@@ -27,7 +27,7 @@ class LoginState extends State<LoginScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Login'),
+        title: Text('Inicia secion '),
       ),
       body: Form(
         child: Scrollbar(

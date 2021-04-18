@@ -31,7 +31,7 @@ class PostsState extends State<PostsScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Post'),
+        title: Text('Healthcare System/Posts'),
       ),
       body: Center(
         child: FutureBuilder<List<Post>>(

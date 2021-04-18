@@ -1,8 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_secure_storage/flutter_secure_storage.dart';
 import 'package:provider/provider.dart';
+//import 'package:prueva_0/fliles/sin-log.dart';
 import 'package:prueva_0/providers/auth.dart';
+//import 'package:prueva_0/screen/post-screen.dart';
+import 'package:prueva_0/screen/principal-screen.dart';
+//import 'package:prueva_0/screen/principal-screen.dart';
+//import 'package:prueva_0/screen/user-screen.dart';
 import 'package:prueva_0/widgets/nav_drawer.dart';
+
+import 'fliles/contac_view.dart';
 
 void main() {
   runApp(
@@ -19,10 +26,10 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.teal,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: MyHomePage(title: 'Sanctum Autentiation'),
+      home: PrintScreen(), //TextEdit(),ListasScreen()
     );
   }
 }
@@ -63,7 +70,7 @@ class _MyHomePageState extends State<MyHomePage> {
             if (auth.authenticated) {
               return Text('You are logged in');
             } else {
-              return Text('You are not logged in');
+              return ContactsPage(); //Text('inicie secion antes de hacer esta accion');
             }
           },
         ),

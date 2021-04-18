@@ -1,9 +1,14 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+//import 'package:prueva_0/models/doctores.dart';
 import 'package:prueva_0/providers/auth.dart';
+import 'package:prueva_0/screen/doctores-screen.dart';
+import 'package:prueva_0/screen/emergencias-screen.dart';
 import 'package:prueva_0/screen/login-screen.dart';
 import 'package:prueva_0/screen/post-screen.dart';
+import 'package:prueva_0/screen/register-screen.dart';
+import 'package:prueva_0/screen/user-screen.dart';
 
 class NavDrawer extends StatelessWidget {
   @override
@@ -21,6 +26,31 @@ class NavDrawer extends StatelessWidget {
                 onTap: () {
                   Navigator.push(context,
                       MaterialPageRoute(builder: (context) => PostsScreen()));
+                },
+              ),
+              ListTile(
+                title: Text("Servicios de emergencias"),
+                onTap: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => EmergenciasScreen()));
+                },
+              ),
+              ListTile(
+                title: Text(" Doctores  "),
+                onTap: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => EmergenciasScreen1()));
+                },
+              ),
+              ListTile(
+                title: Text(" Usuarios  "),
+                onTap: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => PostsScreen1()));
                 },
               ),
               ListTile(
@@ -45,7 +75,7 @@ class NavDrawer extends StatelessWidget {
                 title: Text("Register"),
                 onTap: () {
                   Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => LoginScreen()));
+                      MaterialPageRoute(builder: (context) => RegisScreen()));
                 },
               ),
             ],
