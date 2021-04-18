@@ -3,13 +3,15 @@ import 'package:flutter_secure_storage/flutter_secure_storage.dart';
 import 'package:provider/provider.dart';
 //import 'package:prueva_0/fliles/sin-log.dart';
 import 'package:prueva_0/providers/auth.dart';
+//import 'package:prueva_0/pruevas/seleccion.dart';
 //import 'package:prueva_0/screen/post-screen.dart';
-import 'package:prueva_0/screen/principal-screen.dart';
+//import 'package:prueva_0/screen/principal-screen.dart';
 //import 'package:prueva_0/screen/principal-screen.dart';
 //import 'package:prueva_0/screen/user-screen.dart';
 import 'package:prueva_0/widgets/nav_drawer.dart';
 
 import 'fliles/contac_view.dart';
+import 'fliles/sin-log.dart';
 
 void main() {
   runApp(
@@ -29,7 +31,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.teal,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: PrintScreen(), //TextEdit(),ListasScreen()
+      home: TextEdit(), //SelectionScreen(), //TextEdit(),ListasScreen()
     );
   }
 }

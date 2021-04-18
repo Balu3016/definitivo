@@ -29,7 +29,7 @@ class _TarjetasScreenState extends State<TarjetasScreen> {
               height: 20,
             ),
             RaisedButton(
-                child: Text('edita perro'),
+                child: Text(' edicion de nombres'),
                 onPressed: () {
                   Navigator.of(context)
                       .push(MaterialPageRoute(
